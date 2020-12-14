@@ -2,20 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorController : MonoBehaviour, IUsable
+public class DoorController : MonoBehaviour, I_Interactable
 {
     private bool isDoorOpened = false;
     private Animator anim;
     public Animator Anim { get { return (anim == null) ? anim = GetComponent<Animator>() : anim; } }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && FindObjectOfType<PlayerController>().currentInteraction == PlayerController.WhatToInteract.Door)
-        {
-            Use();
-        }
-    }
-
     public void Use()
     {
         if (!isDoorOpened)
@@ -32,4 +23,8 @@ public class DoorController : MonoBehaviour, IUsable
         }
     }
 
+    public void Waste()
+    {
+        throw new System.NotImplementedException();
+    }
 }

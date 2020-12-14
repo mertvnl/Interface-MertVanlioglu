@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WhatToInteractText : MonoBehaviour
+public class WhatToInteractText : Singleton<WhatToInteractText>
 {
     private Text whatToInteract;
-    public string interactWith = "Nothing";
     public Text WhatToInteract { get { return (whatToInteract == null) ? whatToInteract = GetComponent<Text>() : whatToInteract; } }
 
     private void Start()
     {
-        WhatToInteract.text = "You can interact with : " + interactWith; 
+        WhatToInteract.text = "You can interact with : Null"; 
     }
 
-    public void UpdateText()
+    public void UpdateText(string objectName)
     {
-        WhatToInteract.text = "You can interact with : " + interactWith;
+        WhatToInteract.text = "You can interact with : " + objectName;
     }
 }

@@ -68,8 +68,9 @@
     <Compile Include="Assets\[InterfacePrac]\Scripts\AppleController.cs" />
     <Compile Include="Assets\[InterfacePrac]\Scripts\DoorController.cs" />
     <Compile Include="Assets\[InterfacePrac]\Scripts\HealthText.cs" />
-    <Compile Include="Assets\[InterfacePrac]\Scripts\Interface\Interfaces.cs" />
+    <Compile Include="Assets\[InterfacePrac]\Scripts\Interface\I_Interactable.cs" />
     <Compile Include="Assets\[InterfacePrac]\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\[InterfacePrac]\Scripts\Singleton.cs" />
     <Compile Include="Assets\[InterfacePrac]\Scripts\WhatToInteractText.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:/2019.4.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
