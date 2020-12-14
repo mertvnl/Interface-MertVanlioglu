@@ -34,4 +34,10 @@ public class PlayerController : MonoBehaviour
         nearestGameObject = other.gameObject;
         WhatToInteractText.Instance.UpdateText(other.gameObject.name);
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        nearestGameObject = null;
+        WhatToInteractText.Instance.UpdateText("Nothing");
+    }
 }

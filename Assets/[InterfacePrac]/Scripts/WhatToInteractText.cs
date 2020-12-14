@@ -10,7 +10,7 @@ public class WhatToInteractText : Singleton<WhatToInteractText>
 
     private void Start()
     {
-        WhatToInteract.text = "You can interact with : Null"; 
+        WhatToInteract.text = "You can interact with : Nothing"; 
     }
 
     public void UpdateText(string objectName)
